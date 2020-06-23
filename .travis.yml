@@ -17,4 +17,4 @@ install:
   - pip install pipenv
   - pipenv install
 
-script: ./run.py
+script: python run.py
