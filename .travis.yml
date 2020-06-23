@@ -2,9 +2,8 @@ language: python
 
 jobs:
   include:
-    dist:
-    - bionic
-    - focal
+    - dist: bionic
+    - dist: focal
 
 python:
   - "3.8"
