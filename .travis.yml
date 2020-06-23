@@ -1,12 +1,20 @@
 language: python
-dist:
-- focal
-- bionic
+
+jobs:
+  include:
+    dist:
+    - bionic
+    - focal
+
 python:
   - "3.8"
 addons:
   apt:
     packages:
       - libgdal-dev
+
+install:
+  - pip install pipenv
+  - pipenv install
 
 script: ./run.py
